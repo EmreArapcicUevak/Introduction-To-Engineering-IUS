@@ -5,3 +5,4 @@ totalProd = [length(Prod(:, 1)), sum(sum(Prod(:,2:end)))]
 avgProd = [length(Prod(:, 1)), mean(Prod(:,2:end))]
 yearProd = [Prod(:, 1), sum(Prod(:,2:end)')']
 maxProd = [Prod(:, 1), max(Prod(:, 2:end)')']
+overallMax = max(max(Prod(:, 2:end)))
