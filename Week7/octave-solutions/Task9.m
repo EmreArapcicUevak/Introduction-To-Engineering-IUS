@@ -10,3 +10,9 @@ while true
 endwhile
 
 display(inputVector)
+Max = max(inputVector)
+min = min(inputVector)
+mean = mean(inputVector)
+negValues = sum(inputVector < 0)
+posValues = sum(inputVector > 0)
+zeroValues = sum(inputVector == 0)
