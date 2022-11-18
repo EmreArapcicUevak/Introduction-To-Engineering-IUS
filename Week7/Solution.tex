@@ -28,7 +28,7 @@
 \usepackage{hyperref} % for hyper links
 \usepackage{enumitem} % for better enum lists
 \usepackage{tcolorbox} % for adding colored text boxes
-\usepackage{mcode} % for including mathlab code
+\usepackage[framed,numbered,autolinebreaks,useliterate]{mcode} % for including mathlab code
 
 % Setting up the default image path
 \graphicspath{{./Pictures/}}
@@ -378,7 +378,25 @@
 					Vedad\_Siljic@ius.com				
 				\end{tcolorbox}
 		\pagebreak
-		\section{Octave Problems}
-		
-		
+	\section{Octave Problems}
+		\subsection{Part 1.}
+			\subsubsection{Question}
+				\noindent Assume a matrix named \textbf{Prod} contains data on production of various electronic devices at your company during several years. Each row of the
+				matrix contains production data for a single year. The first element in each row contains the year, e.g., 2007 or 10012. The remaining elements 
+				in each represent the number of a specific part manufactured during that year.
+				For example, the second element might contain the number of 2N3904 transistors produced during each year, whereas the fifth column might 
+				contain the number of IC555 timer chips produced.
+				Write a single line of code to answer each of the following questions. You may use the results of any question to answer subsequent questions if 
+				desired. A sample \textbf{Prod} matrix is provided online. Note that your solution must work for any properly formatted matrix \textbf{Prod}.
+				
+				\begin{enumerate}[label=\alph*.]
+					\item Create a row vector \textbf{TotalProd} that contains the total number of years in the first element and the total number of each item produced during all listed years in the remaining elements. 
+					\item Create a row vector \textbf{AvgProd} that contains the total number of years in the first element and the average number of each item produced during all listed years in the remaining elements.
+					\item Create a two-column matrix \textbf{YearProd}. The first column should contain the same years as those in the first column of Prod, and the second column should contain the total number of all units produced during each year.
+					\item Create a two-column matrix \textbf{MaxProd}. Determine the maximum number of any type of device produced during each year and place the results in the second column of the corresponding row in \textbf{MaxProd}.
+					\item Determine the maximum number of any device produced during any year and place the result in the scalar \textbf{OverallMax}
+					\item If your company makes a profit of one-fifth of one cent on each device produced, regardless of type, determine the total profit made during all listed years and place the result in \textbf{Profit}. Your result should be in dollars.
+				\end{enumerate}
+			\subsubsection{Solution}	
+				\lstinputlisting{./octave-solutions/Task1.m}
 \end{document}
