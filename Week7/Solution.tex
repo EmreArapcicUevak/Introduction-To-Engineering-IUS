@@ -450,4 +450,19 @@
 				
 				\noindent \rule{\textwidth}{0.5pt} \miniHeader{EvenSum.m}
 				\lstinputlisting{./octave-solutions/Task5/EvenSum.m}
+		
+		\subsection{Part 6.}
+			\subsubsection{Question}
+				\noindent Consider the following loop.
+				\begin{lstlisting}
+[r,c]=size(D);
+j=c; i=1;
+while j > 0
+	T(i,1)=D(i,i); T(i,2)=D(i,j);
+	i=i+1; j=j-1;
+end
+				\end{lstlisting}
+				\noindent If we ran the code and generated the following values for T $\left(\begin{bmatrix}2 && 11\\ 7 && 16\end{bmatrix}\right)$. What is D?
+			\subsubsection{Solution}
+				\[D = \begin{bmatrix}2 && 7\\ 16 && 11\end{bmatrix}\]
 \end{document}
