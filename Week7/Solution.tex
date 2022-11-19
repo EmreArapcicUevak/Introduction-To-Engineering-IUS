@@ -465,4 +465,26 @@ end
 				\noindent If we ran the code and generated the following values for T $\left(\begin{bmatrix}2 && 11\\ 7 && 16\end{bmatrix}\right)$. What is D?
 			\subsubsection{Solution}
 				\[D = \begin{bmatrix}2 && 7\\ 16 && 11\end{bmatrix}\]
+		\subsection{Part 7.}
+			\subsubsection{Question}
+				\noindent What is the output of $M4$ if $M = \begin{bmatrix}
+					1 && 3 && 2 \\
+					6 && 0 && 2
+				\end{bmatrix}$ 
+			
+				\begin{lstlisting}
+[rows,cols]=size(M);
+for r=1:1:2*rows
+	for c=1:1:2*cols
+		M4(r,c)=c;
+	end
+end
+				\end{lstlisting}
+			\subsubsection{Solution}
+				\[M4 = \begin{bmatrix}
+					1 & 2 & 3 & 4 & 5 & 6 \\
+					1 & 2 & 3 & 4 & 5 & 6 \\
+					1 & 2 & 3 & 4 & 5 & 6 \\
+					1 & 2 & 3 & 4 & 5 & 6 \\
+				\end{bmatrix}\]
 \end{document}
