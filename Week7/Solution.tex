@@ -1,0 +1,502 @@
+\documentclass[a4paper, 10pt]{article}
+
+\usepackage[margin = 1in]{geometry} % for spacing around
+\usepackage{graphicx} % for including images in your pdfs
+\usepackage{xcolor} % for including colors in your pdf
+\usepackage{soul} % for text decoration
+\usepackage[utf8]{inputenc} % for encoded text
+\usepackage[T1]{fontenc}
+\usepackage{setspace} % for setting different line spacings between paragrafs.
+\usepackage{enumerate} % for letting us get more detailed enumerate lists
+\usepackage{multirow} % to let us combine more rows together
+\usepackage{colortbl} % for decorating tables
+\usepackage{amsmath} % used for representing more complicated math displays
+\usepackage{supertabular}
+\usepackage{longtable} % both of these packages are used to making really big tables
+\usepackage{wrapfig} % allows us to wrap text around figures
+\usepackage{fancyhdr} % for making fancy headers
+%\usepackage{bibtex} % for making better bibliographies
+\usepackage[pdftex]{hyperref} % for letting us make links
+\usepackage{lscape} % Allows us to flip from portrait to landspace
+\usepackage{tikz} % for high detailed drawing
+\usepackage{multicol} % To put things side by side
+\usepackage{rotating} % For rotating objects
+% \usepackage{draftwatermark} % For adding watermarks
+\usepackage{MnSymbol} % for using multiple symbols
+\usepackage{mathtools} % Used for more math symbols
+\usepackage{xfrac} % For more complciated fractions and to add derivitives
+\usepackage{hyperref} % for hyper links
+\usepackage{enumitem} % for better enum lists
+\usepackage{tcolorbox} % for adding colored text boxes
+\usepackage[framed,numbered,autolinebreaks,useliterate]{mcode} % for including mathlab code
+\usepackage{bm} % Adding bold text to math inputs
+
+% Setting up the default image path
+\graphicspath{{./Pictures/}}
+
+% Implementing authro details
+\title{Solutions for Homework7}
+\author{Emre Arapcic-Uvak & Vedad Siljic}
+\date{}
+
+% Setting up the fancy page style
+\fancypagestyle{customStyle}{
+	\lhead{} \chead{} \rhead{}
+	\lfoot{} \cfoot{\thepage} \rfoot{}
+	\renewcommand{\headrulewidth}{0pt}
+	\renewcommand{\footrulewidth}{1pt}
+}
+\pagestyle{customStyle}
+
+% Setting up hyperref options
+\hypersetup {
+	colorlinks = false,
+	citecolor = black,
+	filecolor = blue,
+	linkcolor = blue,
+	urlcolor = blue,
+	pdftex
+}
+
+% Custom commands
+\newcommand{\important}[1]{\textcolor{red}{\textbf{\textsc{#1}}}}
+\newcommand{\miniHeader}[1]{\begin{large}\textbf{\textsc{#1}}\end{large}}
+\newcommand{\volumeUnit}[0]{\frac{g}{cm^{3}}}
+
+\begin{document}
+	\maketitle
+	\vspace{5mm}
+	
+	\begin{abstract}
+		\begin{center}
+			\noindent In this document we will show the solutions for problems represented in the given homework for this week.
+		\end{center}
+	\end{abstract}
+	\pagebreak
+	
+	\tableofcontents
+	\pagebreak
+	
+	\section{Theoretical Problems}
+		\subsection{Part 1.}
+			\subsubsection{Question}
+				\begin{enumerate}
+					\item \noindent Your company has been granted a contract to develop the next generation of electronic cigarette, also 
+					known as a “nicotine delivery system,” and you have been assigned to the design team. Can you in good 
+					conscience contribute your expertise to this project? Write in details: issues, stakeholders, 
+					consequences action you might take
+					
+					\item Choose \textbf{one}~of the following industries then:
+					\begin{enumerate} [a.]
+						\item Apply the four-step ethical decision-making procedure to gain insight into the nature of the decision to be made\\
+						\noindent (what the issue and who is effected by the alterntives, alternatives from other prespectives and their correlation, suggest an action)
+						
+						\item Give at least one more ethical issue in the indutry you choose
+					\end{enumerate}
+					\noindent Choose one:
+					\begin{enumerate}
+						\item Food processing industry (one issue Excess use of (fat/sugar/salt))
+						\item International manufacturing companies (one issue poor labor practice in other countries)
+						\item Various chemical industries (one issue Pesticide effect on ecosystem)
+					\end{enumerate}
+				\end{enumerate}
+			
+			\subsubsection{Solution}
+				\begin{enumerate}
+					\item \\
+						\begin{enumerate}
+							\item Step 1: Identify and see if there is a problem, and if who is affected by it. \\
+							\begin{itemize}
+								\item Issues:
+								\begin{itemize}
+									\item Nicotine is very addictive and detrimental for your body.
+									\item This device / product might misdirect a lot of people into thinking that it will help them to stop smoking while in reality it could be worse.
+									\item Health care lawsuits / Protests against the product.
+									\item If this product becomes popular, there will be a huge decline in tobacco sales.
+									\item Refusing to make this product can get you fired.
+									\item Halting the production can cause huge money loss.
+								\end{itemize}
+							
+								\item Stakeholders:
+								\begin{itemize}
+									\item Nicotine addicts that are trying to recover
+									\item The User
+									\item Young people
+									\item The company
+									\item Tobacco farmers
+									\item You
+								\end{itemize}
+							\end{itemize}
+						
+							\item Step 2: Analyze alternative courses of action from different perspectives.
+							\begin{itemize}
+								\item Consequences:
+								\begin{itemize}
+									\item Future lawsuits will come.
+									\item You might lose your job.
+									\item A lot of people might develop health problems
+								\end{itemize}
+							
+								\item Intent:
+								\begin{itemize}
+									\item People who struggle with nicotine addiction should \important{not} use this product.
+									\item People who use this device risk getting addicted to nicotine.
+									\item People might overcome their tobacco addiction.
+									\item The company will make a lot of \textcolor{green}{\$\$\$}
+								\end{itemize}
+							
+								\item Character
+								\begin{itemize}
+									\item Person of good character would \important{not} condone the use of this device.
+									\item Person of good character \important{could}~use this device without damaging their reputation.
+									\item My spiritual leader would \important{not} condone the use of this device.
+								\end{itemize}
+							
+							\end{itemize}
+							
+							\pagebreak
+							\item Step 3: Correlate perspectives.
+							\begin{itemize}
+								\item While it is true that this device can help people resolve their smoking addiction, it will still affect the consumers health because nicotine is poisonous.
+								\noindent This device doesn't benefit people who are non smokers, nor does it do good for the company because of the legal lawsuits it would face from all the health
+								\noindent~concerns.
+							\end{itemize}
+						
+							\item Step 4: My decision
+							\begin{itemize}
+								\item I do \important{not} condone the use of this device for the soul reason that it has more negative over positives, and all the positives it has all come with their side-effects.
+							\end{itemize}
+						\end{enumerate}
+					\item \miniHeader{Food processing industry (one issue Excess use of (fat/sugar/salt))} \\
+						\begin{enumerate}
+								\item Step 1: Identify and see if there is a problem, and who is affected by it.
+								\begin{itemize}
+									\item Issues:
+									\begin{itemize}
+										\item Health problems
+										\item Possible lawsuits
+									\end{itemize}
+									
+									\item Stakeholders:
+									\begin{itemize}
+										\item Young children
+										\item Industry food consumers
+										\item Students (Because no \textcolor{green}{\$\$\$}, can't get good food :( spent it all on my car)
+										\item Company
+									\end{itemize}
+								\end{itemize}
+								
+								\item Step 2: Analyze alternative courses of action from different perspectives:
+								\begin{itemize}
+									\item Consequences:
+									\begin{itemize}
+										\item Diabetes 
+										\item Heart problems
+										\item Sugar Rush
+										\item Kidney problems
+									\end{itemize}
+								
+									\item Intent:
+									\begin{itemize}
+										\item Young kids should not be given food with too much sugar, because it has a high probability of giving them a sugar rush.
+										\item People should not consume food with a lot of fat, because it increases the chance of a heart attack.
+										%\item \includegraphics{}
+									\end{itemize}
+								
+									\item Character:
+									\begin{itemize}
+										\item Person of good character would \important{not} condone the selling of food products with high amount of salt,sugar, or fat.
+										\item Person of good character would \important{not} sell these products.
+									\end{itemize}
+								\end{itemize}
+								
+								\item Step 3: Correlate perspectives.
+								\begin{itemize}
+									\item Products that have an excess amount of fat/sugar/salt are extremely cheap, and very damaging to a person's health.
+								\end{itemize}
+							
+								\item Step 4: My decision
+								\begin{itemize}
+									\item I do \important{not} suggest consumption nor selling of products with excess amount of fat/sugar/salt do to their high levels of risk to health.
+								\end{itemize}
+						\end{enumerate}
+				\end{enumerate}
+			
+			
+		\pagebreak
+		\subsection{Part 2.}
+			\subsubsection{Question}
+				\begin{enumerate}
+					\item For a 14 minutes oral presentation, how would you allocate the time for introduction, body and conclusion
+					\item List some recommendations related to oral presentations 
+					\item List some body language related aspects of oral presentation
+				\end{enumerate}
+			\subsubsection{Solution}
+				\begin{enumerate}
+					\item 2 minutes on introduction, 10 minutes for the body, and 2 minutes for the conclusion.
+					\item 
+						\begin{itemize}
+							\item Be excited.
+							\item Speak with confidence.
+							\item Make eye contact with the audience.
+							\item Avoid reading from the screen.
+							\item Blank the screen when a slide is unnecessary.
+						\end{itemize}
+					\item 
+						\begin{itemize}
+							\item Make sure you look at everyone
+							\item Do not be tense
+							\item Be adaptable
+							\item Smile
+							\item Interact with the audience
+							\item Speak clearly
+						\end{itemize}
+				\end{enumerate}
+	
+	\subsection{Part 3.}
+			\subsubsection{Question}
+				\noindent Fix the following texts to look more professional
+				\begin{itemize}
+					\item The manager at the company discussed the project of the construction with the engineer of the contract.
+					\item Mechanical engineers designed vehicles, develop heating system, and drawing machine parts
+					\item The following skills are used by engineers analysis creativity and communication
+				\end{itemize}
+			\subsubsection{Solution}
+				\begin{itemize}
+					\item The manager of the company discussed the construction project with the engineer in charge.
+					\item Mechanical engineers work on designing the vehicles, developing the heating systems, and sketching needed machine parts.
+					\item Analysis, creativity, and communication skills are used by engineers.
+				\end{itemize}
+	\pagebreak
+	\subsection{Part 4.}
+		\subsubsection{Question}
+			\begin{enumerate}
+				\item What are the steps in designing a solution to a problem?
+				\item What are the constraints faced in designing solution for engineering problems?
+			\end{enumerate}
+		\subsubsection{Solution}
+			\noindent The steps in designing a solution to a problem are: \vspace{2mm}
+			\begin{enumerate}
+				\item Define the problem;
+				\item Generate concepts;
+				\item Develop a solution;
+				\item Construct and test the prototype;
+				\item Evaluate the solution(if not valid go to step 3);
+				\item Present the solution;
+			\end{enumerate}
+			\vspace{5mm}
+			\noindent The biggest constraints faced in designing solutions for engineering problems are design limitations, available budget, resources, manpower, and time.
+	\subsection{Part 5.}
+		\subsubsection{Question}
+			\noindent An engineer works at an automobile manufacturing facility. His tests show that there is 1\% probability that the brake system might fail. He informs his manager of his findings. However, his manager stresses the importance of shipping the new automobiles on time because any  more delays in production will cause massive financial losses. He asks the engineer to ignore the test results and concentrate on meeting  the delivery deadlines.
+		\subsubsection{Solution}
+			\noindent While no question here was asked, we are guessing this has to do with the choice that the engineer should make. Here it is a classical ethical question if the engineer should push this product. If the engineer does not push out the product in time he will cause a huge financial loss to the company which will most likely lead him to getting fired, on the other side if he does push this product he will be putting a lot of peoples lives at risk. So the engineer should \important{not} push this product out.
+	\subsection{Part 6.}
+		\subsubsection{Question}
+			\noindent Choose and explain your choice of major, and the type of job you envision yourself doing in 15 years. Consider the following:
+			\begin{enumerate}[label=\alph*)]
+				\item What skills or talents do you possess that will help you succeed in your field of interest?
+				\item How passionate are you about pursuing a career in engineering? If you do not plan on being an engineer, what changed your mind?
+				\item How confident are you in your choice of major?
+				\item How long will it take you to complete your degree?
+				\item Will you obtain a minor?
+				\item Will you pursue study abroad, co-op, or internship?
+				\item Do you plan to pursue an advanced degree, or become a professional engineer (PE)?
+				\item What type of work (industry, research, academic, medical, etc.) will you pursue?
+			\end{enumerate}
+		\subsubsection{Solution}
+			\begin{enumerate}[label=\alph*)]
+				\item I am a very fast learner.
+				\item I am very passionate about pursuing a career in engineering.
+				\item I am extremely confident in my choice of major.
+				\item It will take me around 4-5 years to get my degree.
+				\item I will probably not obtain a minor.
+				\item I would like to go to an internship abroad. I would love to work at google.
+				\item I am planning to get a master's degree in software engineering.
+				\item I will pursue any work I can get. Preferably in the industry.
+			\end{enumerate}
+		
+		\subsection{Part 7.}
+			\subsubsection{Question}
+				\noindent Read the essay “Engineering is an . . . itch!” in the Engineering Essentials introduction. (chapter 1) Reflect on what it means to have performance-focused versus mastery-focused learning goals.
+				\begin{enumerate}[label=\alph*)]
+					\item Describe in your own words what it means to be a performance-based learner compared with a mastery-based learner.
+					\item What learning goals do you have? Are these goals performance based or mastery based?
+					\item Is it important to you to become more mastery focused?
+					\item Do you have different kinds of learning goals than you had in the past, and do you think you will have different learning goals in the future?
+				\end{enumerate}
+			\subsubsection{Solution}
+				\begin{enumerate}[label=\alph*)]
+					\item For me to be a performance-based learner is to learn something as much as possible. Not because I love it, but because I will get something in return. While the mastery-based learner is interested and passionate about what he is learning.
+					\item My learning goals are to learn as much as possible about computers and they are entirely mastery-based.
+					\item Yes it is important to me to become more mastery focused.
+					\item I had always the same learning goals and I think they will stay the same in the future.
+				\end{enumerate}
+			
+		\subsection{Part 8.}
+			\subsubsection{Question}
+				\noindent Determine the density and specific gravity of a rock.
+			\subsubsection{Solution}
+				\noindent To calculate the rock density you need to divide the mass of the rock by its volume. The latter can be determined by placing the rock into a graduated cylinder filled with water.
+				\begin{enumerate}
+					\item Select a rock sample with an approximate weight of $20 \rightarrow 30 g$.
+					\item Weigh the rock on the scale; for example, the rock mass is $20.4 g$.
+					\item Fill the graduated cylinder approximately half full with water. Then determine the exact water volume using the cylinder scale. For example, you may put $55 ml$ of water in the cylinder.
+					\item Put the rock into the graduated cylinder making sure that your sample is completely covered with water. Note that the water level will rise.
+					\item Determine the volume of the water in the graduated cylinder again; for example, the volume after placing the rock is $63 ml$.
+					\item Subtract the initial volume (Step 3) from the final volume in the cylinder (Step 5) to calculate the volume of the rock. In our example, the rock volume is $63 - 55$ or $8 ml$.
+					\item Divide the mass of the rock by its volume to calculate the density of the rock. In our example, the density is $\frac{20.4}{8} = 2.55 \frac{g}{cm^{3}}$.
+				\end{enumerate}
+			
+				\noindent To calculate the gravity of the rock, divide the rock density by the density of water to calculate the specific gravity. Since the water density is 1 g/cubic cm (at 4 Celsius) then the specific gravity in our example will be $\frac{2.55\volumeUnit}{1\volumeUnit}$ or $2.55$.
+				
+		\subsection{Part 9.}
+			\subsubsection{Question}
+				\noindent Choose a topic that you like, read, find or make an experiment or a report about it then:
+				\begin{enumerate}
+					\item Write a memo to a manager
+					\item Write a short report to a customer
+					\item Plan a poster to your friends (don’t make it, just make a plane for it)
+					\item Plan a presentation about the topic, again, don’t make it, just the outline and the plan of the presentation
+				\end{enumerate}
+			\subsubsection{Solution}
+				\noindent Selected topic: Write a memo to a manager
+				\begin{tcolorbox}[colback=red!5!white,colframe=red!75!black,title=Memo To My Manager]
+					To: Emre Arapcic-Uevak\\
+					From: Vedad Siljic\\
+					Subject: Software Engineering Seminar -28 December\\
+					Date: 25.11.2022.\\
+					\hspace{3mm}
+					
+					I recently received information regarding a software engineering seminar at the end of December this year, and I would like the whole team to attend.
+					As a lead developer, I feel that it is vital to stay up-to-date with the latest news, and information, to help us to make our scripting language IUScript better. Doing so enables us to continually grow, in turn giving the best possible outcomes for our project.
+					I would appreciate it if you could agree for the whole team to go to this seminar by the end of this month so that I have enough time to book my space.
+					I look forward to hearing from you.
+					
+					\tcblower
+					Vedad Siljic\\
+					Lead Software Engineer\\
+					Vedad\_Siljic@ius.com				
+				\end{tcolorbox}
+		\pagebreak
+	\section{Octave Problems}
+		\subsection{Part 1.}
+			\subsubsection{Question}
+				\noindent Assume a matrix named \textbf{Prod} contains data on production of various electronic devices at your company during several years. Each row of the
+				matrix contains production data for a single year. The first element in each row contains the year, e.g., 2007 or 10012. The remaining elements 
+				in each represent the number of a specific part manufactured during that year.
+				For example, the second element might contain the number of 2N3904 transistors produced during each year, whereas the fifth column might 
+				contain the number of IC555 timer chips produced.
+				Write a single line of code to answer each of the following questions. You may use the results of any question to answer subsequent questions if 
+				desired. A sample \textbf{Prod} matrix is provided online. Note that your solution must work for any properly formatted matrix \textbf{Prod}.
+				
+				\begin{enumerate}[label=\alph*.]
+					\item Create a row vector \textbf{TotalProd} that contains the total number of years in the first element and the total number of each item produced during all listed years in the remaining elements. 
+					\item Create a row vector \textbf{AvgProd} that contains the total number of years in the first element and the average number of each item produced during all listed years in the remaining elements.
+					\item Create a two-column matrix \textbf{YearProd}. The first column should contain the same years as those in the first column of Prod, and the second column should contain the total number of all units produced during each year.
+					\item Create a two-column matrix \textbf{MaxProd}. Determine the maximum number of any type of device produced during each year and place the results in the second column of the corresponding row in \textbf{MaxProd}.
+					\item Determine the maximum number of any device produced during any year and place the result in the scalar \textbf{OverallMax}
+					\item If your company makes a profit of one-fifth of one cent on each device produced, regardless of type, determine the total profit made during all listed years and place the result in \textbf{Profit}. Your result should be in dollars.
+				\end{enumerate}
+			\subsubsection{Solution}	
+				\lstinputlisting{./octave-solutions/Task1.m}
+				\pagebreak
+		\subsection{Part 2.}
+			\subsubsection{Question}
+				\noindent The Eco-Marathon is an annual competition sponsored by Shell Oil, in which participants build special vehicles to achieve the highest possible 
+				fuel efficiency. The Eco-Marathon is held around the world with events in the United Kingdom, Finland, France, Holland, Japan,
+				and the United States. A world record was set in the Eco-Marathon by a French team in 2003 called Microjoule with a performance of 10,705 
+				miles per gallon. The Microjoule runs on ethanol. Write a MATLAB program to determine how far the Microjoule will travel in kilometers given a 
+				user-specified amount of ethanol, provided in units of grams. For your test case, you may assume that the user provides 100 grams of ethanol.
+			\subsubsection{Solution}
+				\lstinputlisting{./octave-solutions/Task2.m}
+		\subsection{Part 3.}
+			\subsubsection{Question}
+				\noindent An unmanned X-43 A scramjet test vehicle has achieved a maximum speed of Mach number 9.68 in a test flight over the Pacific Ocean. Mach 
+				number is defined as the speed of an object divided by the speed of sound. Assuming the speed of sound is 343 meters per
+				second, write a MATLAB program to determine speed in units of miles per hour. Your program should ask the user to provide the speed as Mach 
+				number and return the speed in miles per hour in a formatted sentence, displayed as an integer value, as shown in the sample
+				output below. \\
+				\hspace{5mm} \textbf{\textsc{Sample Input/Output:}} \\
+				\hspace{5mm} Enter the speed as a Mach number: 9.68 \\
+				\hspace{5mm} The speed of the plane is 7425 mph
+			\subsubsection{Solution}
+				\lstinputlisting{./octave-solutions/Task3.m}
+				\pagebreak
+		\subsection{Part 4.}
+			\subsubsection{Question}
+				\noindent Determine the result of the following code, if $C = \begin{bmatrix} 1 && 0 && -1 \\ -2 && 2 && 3  \end{bmatrix} \rightarrow C0 = C <= 0$;\\
+				\noindent What is C0?
+			\subsubsection{Solution}
+				\vspace {4mm}
+				\noindent $C0 = \begin{bmatrix} 0 && 1 && 1 \\ 1 && 0 && 0  \end{bmatrix}$
+		\subsection{Part 5.}
+			\subsubsection{Question}
+				\noindent Write a function named \textbf{EvenSum} that will accept a matrix of unknown size and return the sum of all elements at the intersection of even 
+				numbered rows and even numbered columns. Note that your function must work with any size matrix. Also note that if the matrix is a scalar or 
+				a vector, the function will return zero since there are no even numbered rows or columns in those
+				cases. \\ \vspace{4mm}
+				
+				\noindent EXAMPLE: For the matrix shown, A=EvenSum(Test); will place the value 18 in A. The numbers added together are shown in bold face \\
+				\vspace{3mm} $Test = \begin{bmatrix}
+					1 && 3 && 5 && 3 && 4 \\
+					0 && \boldsymbol{1} && 2 && \boldsymbol{6} && 0 \\
+					6 && 4 && 5 && 5 && 1 \\
+					3 && \boldsymbol{5} && 5 && \boldsymbol{6} && 5 \\
+				\end{bmatrix}$
+			\subsubsection{Solution}
+				\miniHeader{Task5.m}
+				\lstinputlisting{./octave-solutions/Task5/Task5.m}
+				
+				\noindent \rule{\textwidth}{0.5pt} \miniHeader{EvenSum.m}
+				\lstinputlisting{./octave-solutions/Task5/EvenSum.m}
+		
+		\subsection{Part 6.}
+			\subsubsection{Question}
+				\noindent Consider the following loop.
+				\begin{lstlisting}
+[r,c]=size(D);
+j=c; i=1;
+while j > 0
+	T(i,1)=D(i,i); T(i,2)=D(i,j);
+	i=i+1; j=j-1;
+end
+				\end{lstlisting}
+				\noindent If we ran the code and generated the following values for T $\left(\begin{bmatrix}2 && 11\\ 7 && 16\end{bmatrix}\right)$. What is D?
+			\subsubsection{Solution}
+				\[D = \begin{bmatrix}2 && 7\\ 16 && 11\end{bmatrix}\]
+		\subsection{Part 7.}
+			\subsubsection{Question}
+				\noindent What is the output of $M4$ if $M = \begin{bmatrix}
+					1 && 3 && 2 \\
+					6 && 0 && 2
+				\end{bmatrix}$ 
+			
+				\begin{lstlisting}
+[rows,cols]=size(M);
+for r=1:1:2*rows
+	for c=1:1:2*cols
+		M4(r,c)=c;
+	end
+end
+				\end{lstlisting}
+			\subsubsection{Solution}
+				\[M4 = \begin{bmatrix}
+					1 & 2 & 3 & 4 & 5 & 6 \\
+					1 & 2 & 3 & 4 & 5 & 6 \\
+					1 & 2 & 3 & 4 & 5 & 6 \\
+					1 & 2 & 3 & 4 & 5 & 6 \\
+				\end{bmatrix}\]
+		\subsection{Part 8.}
+			\subsubsection{Question}
+				\noindent Write a program that will ask the user to input his age in year and it will calculate to him his age in days.
+			\subsubsection{Solution}
+				\lstinputlisting{./octave-solutions/Task8.m}
+		\pagebreak
+		\subsection{Part 9.}
+			\subsubsection{Question}
+				\noindent Write a program that takes a vector as it’s input and returns the maximum, minimum, and mean of the 
+				given vector. And it returns how many positive, negative and 0 numbers in the vector as well.
+			\subsubsection{Solution}
+				\lstinputlisting{./octave-solutions/Task9.m}
+\end{document}
