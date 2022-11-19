@@ -29,6 +29,7 @@
 \usepackage{enumitem} % for better enum lists
 \usepackage{tcolorbox} % for adding colored text boxes
 \usepackage[framed,numbered,autolinebreaks,useliterate]{mcode} % for including mathlab code
+\usepackage{bm} % Adding bold text to math inputs
 
 % Setting up the default image path
 \graphicspath{{./Pictures/}}
@@ -422,11 +423,31 @@
 			\subsubsection{Solution}
 				\lstinputlisting{./octave-solutions/Task3.m}
 				\pagebreak
-		\subsection{Part 3.}
+		\subsection{Part 4.}
 			\subsubsection{Question}
 				\noindent Determine the result of the following code, if $C = \begin{bmatrix} 1 && 0 && -1 \\ -2 && 2 && 3  \end{bmatrix} \rightarrow C0 = C <= 0$;\\
 				\noindent What is C0?
 			\subsubsection{Solution}
 				\vspace {4mm}
 				\noindent $C0 = \begin{bmatrix} 0 && 1 && 1 \\ 1 && 0 && 0  \end{bmatrix}$
+		\subsection{Part 5.}
+			\subsubsection{Question}
+				\noindent Write a function named \textbf{EvenSum} that will accept a matrix of unknown size and return the sum of all elements at the intersection of even 
+				numbered rows and even numbered columns. Note that your function must work with any size matrix. Also note that if the matrix is a scalar or 
+				a vector, the function will return zero since there are no even numbered rows or columns in those
+				cases. \\ \vspace{4mm}
+				
+				\noindent EXAMPLE: For the matrix shown, A=EvenSum(Test); will place the value 18 in A. The numbers added together are shown in bold face \\
+				\vspace{3mm} $Test = \begin{bmatrix}
+					1 && 3 && 5 && 3 && 4 \\
+					0 && \boldsymbol{1} && 2 && \boldsymbol{6} && 0 \\
+					6 && 4 && 5 && 5 && 1 \\
+					3 && \boldsymbol{5} && 5 && \boldsymbol{6} && 5 \\
+				\end{bmatrix}$
+			\subsubsection{Solution}
+				\miniHeader{Task5.m}
+				\lstinputlisting{./octave-solutions/Task5/Task5.m}
+				
+				\noindent \rule{\textwidth}{0.5pt} \miniHeader{EvenSum.m}
+				\lstinputlisting{./octave-solutions/Task5/EvenSum.m}
 \end{document}
