@@ -19,36 +19,42 @@ comingBackPredictions3 = polyval(polyfit(recordedYears, amountOfPeopleComingBack
 % Plotting above mentioned predictions for people leaving
 subplot(3,3,1);
 plot(yearsToPredict,leavingPrediction1, 'b-');
-title("Linear prediction of the amount of people leaving Bosnia & Herzegovina")
+title("Linear prediction of the amount of people leaving Bosnia & Herzegovina");
+grid; xlabel("Year"); ylabel("Number of people leaving");
 
 subplot(3,3,2);
 plot(yearsToPredict,leavingPrediction2, 'b-');
 title("Quadratic prediction of the amount of people leaving Bosnia & Herzegovina")
-
+grid; xlabel("Year"); ylabel("Number of people leaving");
 
 subplot(3,3,3);
 plot(yearsToPredict,leavingPrediction3, 'b-');
 title("Cubic prediction of the amount of people leaving Bosnia & Herzegovina")
-
+grid; xlabel("Year"); ylabel("Number of people leaving");
 
 % Plotting above mentioned predictions for people coming back
 subplot(3,3,4);
 plot(yearsToPredict,comingBackPredictions1, 'b-');
 title("Linear prediction of the amount of people coming back to Bosnia & Herzegovina")
+grid; xlabel("Year"); ylabel("Number of people coming back");
 
 subplot(3,3,5);
 plot(yearsToPredict,comingBackPredictions2, 'b-');
 title("Quadratic prediction of the amount of people coming back to Bosnia & Herzegovina")
+grid; xlabel("Year"); ylabel("Number of people coming back");
 
 subplot(3,3,6);
 plot(yearsToPredict,comingBackPredictions3, 'b-');
 title("Cubic prediction of the amount of people coming back to Bosnia & Herzegovina")
+grid; xlabel("Year"); ylabel("Number of people coming back");
 
 % Plotting our recorded input values
 subplot(3,3,7);
 plot(recordedYears, amountOfPeopleLeaving, 'r*')
 title("Recorded data of people leaving Bosnia & Herzegovina")
+grid; xlabel("Year"); ylabel("Number of people leaving");
 
 subplot(3,3,9);
 plot(recordedYears, amountOfPeopleComingBack, 'r*');
 title("Recorded data of people coming back to Bosnia & Herzegovina")
+grid; xlabel("Year"); ylabel("Number of people coming back");
