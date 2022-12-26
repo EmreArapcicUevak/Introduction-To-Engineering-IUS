@@ -142,9 +142,44 @@
 	\section{Task 2}
 	
 		\subsection{Problem}
-		
+			\noindent An environmental engineer has obtained a bacteria culture from a municipal water sample and allowed the bacteria to grow. The initial count of Bacteria is A, and their growth formula with time being in hours is given by: \[B = B_{0}e^{Ct}\]
+			
+			\noindent A: is the summation of your birthday digits divided by 0.5 \\
+			\noindent C: is the summation of your IUS ID number divided by 50.
+			
+			\begin{itemize}
+				\item What is $B_0$? And what is its value?
+				\item After how many hours, the amount of Bacteria would be 100000?
+				\item Pick up 4 to 5 points in time and draw the graph of Bacteria growth. (This is done by pen and pencil)
+				\item Use Octave to plot the graph of bacteria growth 
+			\end{itemize}
+			\pagebreak
+			
 		\subsection{Solution}
-	
+			\[A = \frac{1 + 4 + 1 + 2 + 2 + 0 + 0 + 2}{0.5} = \frac{12}{0.5} = 24\]
+			\[C = \frac{2 + 2 + 0 + 3 + 0 + 2 + 2 + 8 + 9}{50} = \frac{28}{50} = 0.56\]
+			
+			\begin{enumerate}
+				\item 
+					$B_0$ is the initial amount of bacteria in our system and since our variable $A$ represents the initial count of bacteria we can conclude that $A = B_0$.
+				\item 
+					To figure this out we simply have to figure out the following equation:
+					\[24*e^{0.56*t} = 100000\] \[0.56*t*\ln{24*e} = \ln{100000}\] 
+					\[0.56*t = \frac{\ln{100000}}{\ln{24*e}}\]
+					\[t = \log_{24*e}{100000} * \frac{1}{0.56}\]
+					\[t \approx 4.9207 [h]\]
+				\item 
+					Using the following code:
+					\lstinputlisting{./OctaveCode/BacterialGrowthPlot.m}
+					
+					\noindent We get the following graph
+					\begin{figure}[h]
+						\centering
+						\includegraphics[scale = 0.33]{BacterialGrowthGraph}
+						\caption{Bacterial growth plot}
+						\label{fig:bacterialGrowth}
+					\end{figure}
+			\end{enumerate}
 	\section{Task 3}
 	
 		\subsection{Problem}
