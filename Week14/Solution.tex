@@ -77,4 +77,119 @@
 	\tableofcontents
 	\pagebreak
 	
+	\section{Task 1}
+	
+		\subsection{Problem}
+			\noindent In the given graph which represents the movement of a car, answer the following:
+			\begin{itemize}
+				\item Between which point and point the car accelerate, and between which points it decelerate?
+				\item What is the distance traveled at point C? and what is it at point F?
+				\item Indicate line segments with 0 acceleration, does that mean the car is not moving? Explain.
+				\item What are the values of acceleration and deceleration of the car at each segment?
+			\end{itemize}	
+		
+			\begin{figure}[h]
+				\centering
+				\includegraphics{Task1CarVelocityTimeGraph}
+				\caption{Velocity-Time of the car}
+				\label{fig:task1Fig}
+			\end{figure}
+		\subsection{Solution}
+			\begin{enumerate}
+				\item 
+					\noindent The car accelerates at points:
+					\begin{itemize}
+						\item $A \rightarrow B$
+						\item $F \rightarrow G$
+					\end{itemize}
+				
+					\noindent And it decelerates at points:
+					\begin{itemize}
+						\item $C \rightarrow D$
+						\item $G \rightarrow I$ ($G \rightarrow H$ \& $H \rightarrow I$)
+					\end{itemize}
+				\item 
+					To get the distance we can just find the integral from point $A$ (0) to whatever points we want. So to see what the distance traveled at point $C$ is we just have to evaluate \[\int_{A}^{C}v*dt = \int_{A}^{B}v*dt + \int_{B}^{C}v*dt\]which is just the area under the graph so from $A \rightarrow B$ we have a right triangle with sides $1 \times 6$ which means that the area from that triangle is $\frac{6}{2} = 3$, and from $B \rightarrow C$ we have a rectangle with sides $2 \times 6$ so in total the area of the rectangle is $12$ meaning that the distanced traveled from $A \rightarrow C$ is $3 + 12 = 15m$. To find out the distance traveled from $A \rightarrow F$ we have to solve the following integral: \[\int_{A}^{F}v*dt = \int_{A}^{C}v*dt + \int_{C}^{B}v*dt + \int_{D}^{F}v*dt\]
+					Since we already know that $\int_{A}^{C}v*dt = 15m$ we just have to find the other two integrals, which at the end end up being $15 + \frac{2*4}{2} + 2*2 + 2*4 = 15 + 4 + 4 + 8 = 31m$
+				\item 
+					The line segments with $0$ acceleration are
+					\begin{itemize}
+						\item $B \rightarrow C$
+						\item $I \rightarrow K$ ($I \rightarrow J$ \& $J \rightarrow K$)
+					\end{itemize}
+					This does \textcolor{red}{\textsc{not}} mean that the car isn't moving, this just means that the velocity of the car isn't changing or in other words \[\frac{dv}{dt} = 0\]
+				\item 
+					\vspace{5mm}
+				{
+					\centering
+					\begin{tabular}{|c|c|}
+						\hline \hline 
+						\textsc{Line Segment} & \textsc{Acceleration value $\left[\frac{m}{s^2}\right]$} \\ \hline
+						$A \rightarrow B$ & 3 \\ \hline
+						$B \rightarrow C$ & 0 \\ \hline
+						$C \rightarrow D$ & -2 \\ \hline
+						$D \rightarrow E$ & 0 \\ \hline
+						$E \rightarrow F$ & 0 \\ \hline
+						$F \rightarrow G$ & 1 \\ \hline
+						$G \rightarrow H$ & -1 \\ \hline
+						$H \rightarrow I$ & -1 \\ \hline
+						$I \rightarrow J$ & 0 \\ \hline
+						$J \rightarrow K$ & 0 \\ \hline \hline
+					\end{tabular}
+					\par
+				}
+			\end{enumerate}
+	\section{Task 2}
+	
+		\subsection{Problem}
+		
+		\subsection{Solution}
+	
+	\section{Task 3}
+	
+		\subsection{Problem}
+		
+		\subsection{Solution}
+	
+	\section{Task 4}
+	
+		\subsection{Problem}
+		
+		\subsection{Solution}
+	
+	\section{Task 5}
+	
+		\subsection{Problem}
+		
+		\subsection{Solution}
+	
+	\section{Task 6}
+	
+		\subsection{Problem}
+		
+		\subsection{Solution}
+	
+	\section{Task 7}
+	
+		\subsection{Problem}
+		
+		\subsection{Solution}
+	
+	\section{Task 8}
+	
+		\subsection{Problem}
+		
+		\subsection{Solution}
+	
+	\section{Task 9}
+	
+		\subsection{Problem}
+		
+		\subsection{Solution}
+	
+	\section{Task 10}
+	
+		\subsection{Problem}
+		
+		\subsection{Solution}
 \end{document}
