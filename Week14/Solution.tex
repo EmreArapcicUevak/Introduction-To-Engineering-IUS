@@ -273,12 +273,40 @@
 		\begin{equation*}
 			A_\square \approx \frac{28.277^2}{2} \approx 399.80 [cm^2]
 		\end{equation*}
+
+	\pagebreak
 	\section{Task 8}
 	
 		\subsection{Problem}
-		
+			\noindent An ant is crawling on a unit cube, what is the shortest distance for it to get from start to end?
+			
+			\begin{figure}[h]
+				\centering
+				\includegraphics[scale = 1]{antsUnitCube}
+				\caption{Unit cube that the ant has to traverse}
+				\label{Fig:Ant's Unit Cube}
+			\end{figure}
 		\subsection{Solution}
-	
+			\noindent First let us take a look at what distance actually is, and lets take a look at non euclidean distance as well. Distance can be confusing because sometimes we use it without even thinking, for example when we play chess we don't say move 5cm to the right we say move 5 checker blocks to the right so how do we know if the word "He moved the chess peace 5 checker blocks away from his starting position" is even correct? Well let us take a look at the mathematical definition of what an metric clamming to be distance actually is.
+			
+			\\ \vspace{3mm} If we were to define a function (lets say function $f$) that is defined on an interval $I$ that tells us a distance from two different points, first we need to define some rules that function \emph{must} follow.
+			
+			\begin{enumerate}
+				\item $f(a,b) = f(b,a) \geq 0 , \forall a \wedge b \in I where a \neq b$
+				\item $f(a,b) \equal 0 , \forall a \wedge b \in I where a \equal b$
+				\item $f(a,b) \leq f(a, c) + f(c , b), \forall c$
+			\end{enumerate}
+		
+			\noindent Now the 3rd rule is what interests us the most here, it tells us that the distance from point a to point b is always gonna be either shorter or the same as the distance from a to some point c and from c to some point b, aka if we take a detour. Now that we know that our next step is to find a way to somehow make a straight line without going through the cube because we know that a straight line will be the shortest path the ant can take, we just have to transform the cube somehow without making it lose it's information. One thing that we can do that will make this problem much easier will be if we took the cubes faces and layered them down as can be seen in the figure below:
+			
+			\begin{figure}[h]
+				\centering
+				\includegraphics[scale = .05]{CubeCutOut}
+				\caption{Cube cutout}
+				\label{fig:Cube cut out}
+			\end{figure}
+		
+			\noindent Now all that is left is to map the blocks on this new model (transform their position) and draw a straight line.
 	\section{Task 9}
 	
 		\subsection{Problem}
