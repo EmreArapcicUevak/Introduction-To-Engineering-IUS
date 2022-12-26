@@ -233,9 +233,46 @@
 	\section{Task 7}
 	
 		\subsection{Problem}
-		
+			\noindent Show how to inscribe a square inside a circle such that all the square’s vertices touch the circles’ circumference. Then, calculate the area of the square if the circle’s area is 628 $cm^2$
 		\subsection{Solution}
+			\noindent The process for inscribing a square inside of a circle goes as follows:
+			\begin{enumerate}
+				\item Draw a diameter inside the circle
+				\item Draw another diameter perpendicular to the previous one.
+				\item The resulting 4 points that touch the circle are now the four vertices of the square. 
+			\end{enumerate}
+		
+		\begin{figure}[h]
+			\centering
+			\includegraphics[scale = .85]{inscribedSquare}
+			\caption{Inscribed square in a circle}
+			\label{fig:InscribedSquare}
+		\end{figure}
 	
+		\noindent As we can see from Figure \ref{fig:InscribedSquare}. The diameter of the circle $D = 2r$ is also equal to $D = \sqrt{a^2 * a^2} = \sqrt{2*a^2}$. Which means the following.
+		
+		\begin{equation}
+			D^2 = 2*a^2 \implies a^2 = A_\square = \frac{D^2}{2}
+			\label{Equ:Area of square}
+		\end{equation}
+
+		\begin{equation}
+			A_\circ = r^2 * \pi = 628 [cm^2] \implies r^2 = \frac{628 [cm^2]}{\pi}
+		\end{equation}
+	
+		\begin{equation*}
+			r = \sqrt{\frac{628}{\pi}} [cm]
+		\end{equation*}
+	
+		\begin{equation*}
+			2r = D = 2 * \sqrt{\frac{628}{\pi}} [cm] \approx 28.277 [cm]
+		\end{equation*}
+	
+		\noindent If we now take the result for our D and substitute it into equation \ref{Equ:Area of square}. We will get that:
+		
+		\begin{equation*}
+			A_\square \approx \frac{28.277^2}{2} \approx 399.80 [cm^2]
+		\end{equation*}
 	\section{Task 8}
 	
 		\subsection{Problem}
