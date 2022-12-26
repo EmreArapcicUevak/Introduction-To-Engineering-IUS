@@ -310,9 +310,50 @@
 	\section{Task 9}
 	
 		\subsection{Problem}
-		
+			\noindent Generally, when a car door is opened, the interior lights come on and turn off again when the door is closed. Some cars turn the interior lights on and off gradually. Suppose that you have a car with 25 watts of interior lights. When a door is opened, the power to the lights increases linearly from 0 to 25 watts over 2 seconds. When the door is closed, the power is reduced to zero in a linear fashion over 5 seconds.
+			
+			\begin{itemize}
+				\item Create a proper plot of power (P, on the ordinate) and time (t)
+				\item Using the graph, determine the total energy delivered to the interior lights if the door to the car is opened and then closed 10 seconds later
+			\end{itemize}
 		\subsection{Solution}
-	
+			\begin{enumerate}
+				\item 
+					The code we will use to generate the wanted plots goes as follows:
+					\lstinputlisting{./OctaveCode/powerPlot.m}
+					
+					\pagebreak
+					\noindent And the plot that we get from this code is:
+					\begin{figure}[h]
+						\centering
+						\includegraphics[scale = 0.35]{powerPlot}
+						\caption{Power plot of both open and close door}
+						\label{fig:Power Plot}
+					\end{figure}
+				
+				\item 
+					For the 2nd problem let us first write the code to plot the function.
+					\lstinputlisting{./OctaveCode/finalPowerPlot.m}
+					\pagebreak
+					
+					\begin{figure}[h]
+						\centering
+						\includegraphics[scale = 0.35]{powerConsumptionProblem}
+						\caption{Power plot for 2nd part}
+						\label{fig:Power Plot of the problem}
+					\end{figure}
+					
+					\noindent Well now all that is left to do is solve the integral 
+					\[E = \int P * dt\]
+					
+					\begin{equation}
+						E = \int_{0}^{15}P*dt = \int_{0}^{2}P*dt + \int_{2}^{10}P*dt + \int_{10}^{15}P*dt
+					\end{equation}
+				
+					\begin{equation}
+						E = 25 + 25*8 + \frac{25 * 5}{2} \approx  287.50
+					\end{equation}
+			\end{enumerate}
 	\section{Task 10}
 	
 		\subsection{Problem}
